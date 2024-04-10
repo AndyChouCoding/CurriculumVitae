@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy's CV</title>
-   
+
 </head>
 
 <body>
@@ -50,6 +50,7 @@
                 <label class="btn btn-outline-primary" for="btnradio3">Weather</label>
             </div>
         </div>
+
         <!-- traffic light -->
         <div id="content1" class="text-center pt-5">
             <h4>Traffic Light</h4>
@@ -63,6 +64,10 @@
                     </div>
                     <div id="green_light" style="height:50px ;width:50px;"
                         class="justify-content-center  border border-1 border-dark rounded-circle m-2">
+                    </div>
+                    <div id="light_second" style="height:50px ;width:50px; display: flex;align-items:center;"
+                        class=" bg-secondary display-6 justify-content-center border border-1 border-dark rounded-circle m-2">
+                        <span id="timer"></span>
                     </div>
                 </div>
             </div>
@@ -81,13 +86,15 @@
                     <p style="line-height: 6px;">tie : <span id="tie">0</span></p>
                 </div>
                 <div id="gameBoard" class="col-9 col-md-4 d-flex flex-wrap justify-content-center">
-                    
+
                 </div>
             </div>
         </div>
-        
+
         <!-- Weather -->
-        <div id="content3" class="text-center pt-5" style="display:none;">Weather</div>
+        <div id="content3" class="text-center pt-5" style="display:none;">
+            <h4>Weather</h4>
+        </div>
     </div>
 
     <!-- footer -->
