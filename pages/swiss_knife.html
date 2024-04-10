@@ -52,7 +52,7 @@
         </div>
 
         <!-- traffic light -->
-        <div id="content1" class="text-center pt-5">
+        <div id="content1" class="text-center pt-5" style="display:none;">
             <h4>Traffic Light</h4>
             <div class="d-flex justify-content-center">
                 <div class="d-flex border border-2 border-dark w-5 bg-secondary">
@@ -92,8 +92,21 @@
         </div>
 
         <!-- Weather -->
-        <div id="content3" class="text-center pt-5" style="display:none;">
-            <h4>Weather</h4>
+        <div id="content3" class=" pt-5" style="display:block;">
+            <h4 class="text-center">Weather</h4>
+            <div class="d-flex justify-content-center mt-2" >
+                <div class=" d-flex justify-content-around border border-1 border-dark" style="width: 400px">
+                    <div id="pic">
+                        <img class="p-2" style="height:100px ; width:100px" src="../images//weather/cloud.png" alt="">
+                    </div>
+                    <div>
+                        <div id="location"></div>
+                        <div id="time"></div>
+                        <div id="weather"></div>
+                        <div id="temp"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -123,9 +136,10 @@
             </div>
         </div>
     </div>
-    <script src="../js/swiss_knife.js"></script>
+    <!-- <script src="../js/swiss_knife.js"></script> -->
     <script src="../js/traffic_light.js"></script>
     <script src="../js/ttt.js"></script>
+    <script src="../js/weather.js"></script>
 </body>
 
 </html>
