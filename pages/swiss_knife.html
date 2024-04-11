@@ -52,8 +52,9 @@
         </div>
 
         <!-- traffic light -->
-        <div id="content1" class="text-center pt-5" style="display:none;">
+        <div id="content1" class="text-center pt-5" style="display:block;">
             <h4>Traffic Light</h4>
+            <p>This is a traffic light app that shows the remaining seconds</p>
             <div class="d-flex justify-content-center">
                 <div class="d-flex border border-2 border-dark w-5 bg-secondary">
                     <div id="red_light" style="height:50px ;width:50px;"
@@ -74,24 +75,30 @@
         </div>
 
         <!-- TTT -->
-        <div id="content2" class="container text-center pt-5" style="display:block;">
+        <div id="content2" class="container text-center pt-5" style="display:none;">
             <h4>Tic Tac Toe</h4>
+            <p>A tic-tac-toe game that records wins and losses</p>
             <div class=" row justify-content-center">
-                <div class="col-8 my-2">
-                    <button type="button" class="btn btn-outline-danger mb-2" onclick="resetGame()">Reset</button>
-                    <p style="line-height: 6px;">CurrentPlayer : <span id="currentPlayer">X</span></p>
-                    <p style="line-height: 6px;">stepCount : <span id="stepCount">0</span></p>
-                    <p style="line-height: 6px;">X Wins : <span id="xWins">0</span></p>
-                    <p style="line-height: 6px;">O Wins : <span id="oWins">0</span></p>
-                    <p style="line-height: 6px;">tie : <span id="tie">0</span></p>
+                <div class="col-4 col-md-12 col-sm-12 my-2" style=" width:300px;">
+                    <p style="line-height: 3px;">CurrentPlayer : <span id="currentPlayer">X</span></p>
+                    <p style="line-height: 3px;">stepCount : <span id="stepCount">0</span></p>
+                    <p style="line-height: 3px;">X Wins : <span id="xWins">0</span></p>
+                    <p style="line-height: 3px;">O Wins : <span id="oWins">0</span></p>
+                    <p style="line-height: 3px;">tie : <span id="tie">0</span></p>
                 </div>
-                <div id="gameBoard" class="col-9 col-md-4 d-flex flex-wrap justify-content-center"></div>
+                
+                <div class="row d-flex justify-content-center pb-2">
+                    <div id="gameBoard" class="d-flex flex-wrap justify-content-center" style="width:220px"></div>
+                   
+                </div>
+                <button type="button" class="btn btn-outline-danger mb-5" style="width:70px" onclick="resetGame()">Reset</button>
             </div>
         </div>
 
         <!-- Weather -->
         <div id="content3" class=" pt-5" style="display: none;">
             <h4 class="text-center p-3">Weather</h4>
+            <p class="text-center">Connect the API from "Open Weather" to create a weather clock</p>
             <div class="d-flex justify-content-center mt-2"
                 style="display:block;;background-image: url(../images//weather/weatherBg.png);background-size:contain; background-position: center; background-repeat: no-repeat;">
                 <div class="d-flex text-center">
