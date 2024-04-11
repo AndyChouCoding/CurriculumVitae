@@ -13,19 +13,35 @@ async function fetchWeather() {
     const location = data.name
     console.log('location = ' ,location)
     // weather
-    const weather = data.weather[0].main;
+    const weather = data.weather[0].main
+    // weather test
+    // const weather = "rain"
     console.log('weather = ',weather);
     // temp
-    const temp = data.main.temp;
+    const temp = Math.round(data.main.temp);
     console.log('temp = ',temp);
     // time
     const timeZone = data.timezone;
     const localTime = calculateLocalTime (timeZone);
+    // icon
+    let weatherIconPath;
+    switch(weather.toLowerCase()) {
+        case "clouds":
+            weatherIconPath = "../images/weather/cloud.svg"; // 云图标路径
+            break;
+        case "sun":
+            weatherIconPath = "../images/weather/sun.svg"; // 晴天图标路径
+            break;
+        case "rain":
+            weatherIconPath = "../images/weather/rain.svg"; // 雨天图标路径
+            break;
+    }
 
     document.getElementById('location').innerText = `${location}`;
     document.getElementById('time').innerText = `${localTime}`;
     document.getElementById('weather').innerText =  `${weather}`;
-    document.getElementById('temp').innerText = 'Temp ' + `${temp}`;
+    document.getElementById('temp').innerText =  `${temp}` + ' °C';
+    document.getElementById('pic').innerHTML = `<img class="p-2" style="height:50px; width:50px" src="${weatherIconPath}" alt="Weather Icon">`;
 
 }
 

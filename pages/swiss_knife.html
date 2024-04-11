@@ -74,7 +74,7 @@
         </div>
 
         <!-- TTT -->
-        <div id="content2" class="container text-center py-5" style="display:none;">
+        <div id="content2" class="container text-center pt-5" style="display:block;">
             <h4>Tic Tac Toe</h4>
             <div class=" row justify-content-center">
                 <div class="col-8 my-2">
@@ -85,25 +85,27 @@
                     <p style="line-height: 6px;">O Wins : <span id="oWins">0</span></p>
                     <p style="line-height: 6px;">tie : <span id="tie">0</span></p>
                 </div>
-                <div id="gameBoard" class="col-9 col-md-4 d-flex flex-wrap justify-content-center">
-
-                </div>
+                <div id="gameBoard" class="col-9 col-md-4 d-flex flex-wrap justify-content-center"></div>
             </div>
         </div>
 
         <!-- Weather -->
-        <div id="content3" class=" pt-5" style="display:block;">
-            <h4 class="text-center">Weather</h4>
-            <div class="d-flex justify-content-center mt-2" >
-                <div class=" d-flex justify-content-around border border-1 border-dark" style="width: 400px">
-                    <div id="pic">
-                        <img class="p-2" style="height:100px ; width:100px" src="../images//weather/cloud.png" alt="">
-                    </div>
-                    <div>
-                        <div id="location"></div>
-                        <div id="time"></div>
-                        <div id="weather"></div>
-                        <div id="temp"></div>
+        <div id="content3" class=" pt-5" style="display: none;">
+            <h4 class="text-center p-3">Weather</h4>
+            <div class="d-flex justify-content-center mt-2"
+                style="display:block;;background-image: url(../images//weather/weatherBg.png);background-size:contain; background-position: center; background-repeat: no-repeat;">
+                <div class="d-flex text-center">
+                    <div class="mt-5 p-4" style="width: 350px;height: 250px;">
+                        <div id="temp" class=" text-white" style="font-size:32px;"></div>
+                        <div class="d-flex justify-content-center">
+                            <div id="location" class="mx-2 text-white"></div>
+                            <div id="time" class="text-white"></div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2 align-items-center">
+                            <div  id="pic" class=" mx-1"></div>
+                            <div id="weather" class="text-white"></div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -136,7 +138,7 @@
             </div>
         </div>
     </div>
-    <!-- <script src="../js/swiss_knife.js"></script> -->
+    <script src="../js/swiss_knife.js"></script>
     <script src="../js/traffic_light.js"></script>
     <script src="../js/ttt.js"></script>
     <script src="../js/weather.js"></script>
