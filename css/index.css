@@ -1,0 +1,16 @@
+.navLinkHover {
+  transition: color 0.2s ease !important;
+}
+
+.navLinkHover:hover {
+  color: black !important;
+}
+
+.projectHover {
+    transition: transform 0.3s ease, opacity 0.3s ease !important;
+}
+
+.projectHover:hover {
+    opacity: 0.7 !important;
+    transform: scale(1.05) !important;
+}
