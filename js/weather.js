@@ -27,13 +27,13 @@ async function fetchWeather() {
     let weatherIconPath;
     switch(weather.toLowerCase()) {
         case "clouds":
-            weatherIconPath = "../images/weather/cloud.svg"; // 云图标路径
+            weatherIconPath = "../images/weather/cloud.svg"; 
             break;
         case "sun":
-            weatherIconPath = "../images/weather/sun.svg"; // 晴天图标路径
+            weatherIconPath = "../images/weather/sun.svg";
             break;
         case "rain":
-            weatherIconPath = "../images/weather/rain.svg"; // 雨天图标路径
+            weatherIconPath = "../images/weather/rain.svg";
             break;
     }
 
